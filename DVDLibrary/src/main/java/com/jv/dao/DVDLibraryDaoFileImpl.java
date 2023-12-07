@@ -147,7 +147,7 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao{
     @Override
     public DVD changeDVD(String[] changes, DVD dvdEdit){
         for(int i = 0; i<changes.length;i++){
-            if(changes[i].equals("")){
+            if("".equals(changes[i])){
                 //nothing
             }else{
                 switch(i){
